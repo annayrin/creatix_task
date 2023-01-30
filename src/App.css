@@ -1,38 +1,90 @@
 .App {
-  text-align: center;
+    font-family: sans-serif;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.label {
+    display: inline-block;
+    width: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+    margin-left: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper {
+    margin: auto;
+    text-align: center;
+    width: 320px;
+    height: 650px;
+    overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+    padding: 5px 0;
+    overflow: scroll;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+    color: rgba(100, 149, 237);
+
+}
+
+.list > li {
+    width: calc(100% - 30px);
+    height: 40px;
+    color: rgba(100, 149, 237);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px 0 rgb(100 149 237 / 50%);
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+li > button {
+    height: 24px;
+    width: 80px;
+    border: none;
+    color: rgba(100, 149, 237);
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+li > button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.62);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7aa0ec;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7aa0ec;
+    cursor: pointer;
 }
